@@ -1,0 +1,321 @@
+.tests {
+    .test_smile {
+        width: 76.95%;
+        margin: 8px 11.52% 0 11.52%;
+        overflow-x: scroll;
+
+        .smile_container-scroll {
+            width: 1108px;
+            height: 48px;
+
+            .container_paragraph {
+                display: inline;
+                margin-left: 8px;
+                padding: 8px 16px;
+                background-color: #fff;
+                border-radius: 20px;
+                line-height: 32px;
+                font-size: 20px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .tests_container {
+        margin-top: 75px;
+
+        .container_history {
+            float: left;
+            width: 320px;
+            color: #fff;
+            box-sizing: border-box;
+
+            .item_label {
+                font-size: 16px;
+            }
+
+            .item_paragraph {
+                margin-top: 8px;
+                font-size: 16px;
+            }
+
+            .history_item {
+                background-color: #fff;
+                color: #000;
+                padding: 10px 24px 10px 48px;
+                margin-top: 10px;
+
+                &:hover {
+                    background-color: #9E00FF;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+
+            .history_item.history_item-first {
+                border-radius: 24px 24px 0 0;
+                margin-top: 0;
+            }
+
+            .history_item.history_item-last {
+                border-radius: 0 0 24px 24px;
+            }
+
+            .history_item.history_item-first.history_item-last {
+                border-radius: 24px;
+            }
+
+            .history_item.active {
+                background-color: #000;
+                color: #fff;
+
+                &:hover {
+                    background-color: #9E00FF;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .container_test {
+            display: inline-block;
+            width: calc(77.2% - 96px);
+            margin-left: 8px;
+            background-color: #fff;
+            padding: 28px 35px;
+            border-radius: 32px;
+            position: relative;
+            box-sizing: border-box;
+
+            .test_frame-up {
+                position: absolute;
+                z-index: -1;
+                border-radius: 4px;
+                left: 2.07%;
+                top: -8px;
+                background-color: #E9C4FF;
+                width: 95.8%;
+                height: 15px;
+            }
+
+            .test_frame-bottom {
+                position: absolute;
+                z-index: -2;
+                border-radius: 4px;
+                left: 4.6%;
+                top: -16px;
+                background-color: #F0D9FF;
+                width: 90.8%;
+                height: 15px;
+            }
+
+            .test_label {
+                font-size: 72px;
+                line-height: 80px;
+            }
+
+            .test_paragraph {
+                margin-top: 24px;
+                font-size: 20px;
+            }
+
+            .test_container {
+                margin-top: 83px;
+
+                .container_inline {
+                    display: inline-block;
+                    margin: 2px;
+                }
+            }
+
+            .test_button-back {
+                background-color: #fff;
+                color: #000;
+                border: 2px solid #000;
+            }
+
+            .test_button {
+                margin-top: 64px;
+            }
+        }
+    }
+}
+
+.test_input {
+    font-size: 32px;
+    border: none;
+    padding: 8px;
+    padding-left: 0;
+    width: 63%;
+    border-bottom: 2px solid #000;
+}
+
+.test_select {
+    position: relative;
+    display: block;
+
+    .select_active-item {
+        margin-top: 23px;
+        padding: 12px 32px;
+        width: auto;
+        box-sizing: border-box;
+        width: 295px;
+        height: 64px;
+        border-radius: 16px;
+        border: 2px solid #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .svg_disable {
+            display: block;
+        }
+
+        .svg_enable {
+            display: none;
+        }
+
+        .active_text {
+            font-size: 20px;
+        }
+    }
+
+    .select_container {
+        display: none;
+        width: 300px;
+        padding: 12px 30px;
+        box-sizing: border-box;
+        border: 2px solid #000;
+        border-radius: 16px;
+        position: absolute;
+        background-color: #fff;
+        top: 76px;
+        left: 0;
+        z-index: 10;
+
+        .container_item {
+            border-top: 2px solid #000;
+
+            .item_text {
+                text-align: left;
+                padding: 12px 0;
+                font-size: 20px;
+            }
+
+            &:first-child {
+                border-top: 0 solid #000;
+            }
+
+            &:hover {
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media(max-width:1440px) {
+    .tests {
+        .test_smile {
+            width: 100%;
+            margin: 0;
+            margin-top: 8px;
+        }
+
+        .tests_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .container_history {
+                width: 320px;
+                float: none;
+            }
+
+            .container_test {
+                width: 90%;
+                margin: 0 5%;
+                margin-top: 40px;
+
+                .test_container {
+                    .test_select {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .tests {
+        .test_smile {
+            width: 100%;
+            margin: 0;
+            margin-top: 8px;
+        }
+
+        .tests_container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .container_history {
+                width: 320px;
+                float: none;
+            }
+
+            .container_test {
+                width: 100%;
+                margin-top: 4px;
+                padding: 32px 16px;
+
+                .test_frame-up,
+                .test_frame-bottom {
+                    display: none;
+                }
+
+                .test_image {
+                    width: 192px;
+                    height: 96px;
+                }
+
+                .test_label {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+
+                .test_paragraph {
+                    font-size: 16px;
+                }
+
+                .test_container {
+                    .test_input {
+                        font-size: 24px;
+                        width: 100%;
+                    }
+
+                    .test_select {
+                        width: 100%;
+                    }
+                }
+
+                .test_button-back {
+                    margin-top: 64px;
+                    border-radius: 8px 8px 8px 16px;
+                }
+
+                .test_button {
+                    margin-top: 64px;
+                    border-radius: 8px 8px 16px 8px;
+                }
+            }
+        }
+    }
+}
