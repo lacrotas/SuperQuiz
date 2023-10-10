@@ -35,9 +35,9 @@
         </ul>
         <div class="header_container">
             <button class="container_button button" onclick="openModalWindow()">Связаться с нами</button>
-            <img src="./assets/images/Icons/tickTok.png" alt="ticTok" class="container_image">
-            <img src="./assets/images/Icons/inContact.png" alt="inContact" class="container_image">
-            <img src="./assets/images/Icons/telegram.png" alt="telegram" class="container_image">
+            <img src="./assets/images/Icons/tickTok.svg" alt="ticTok" class="container_image">
+            <img src="./assets/images/Icons/inContact.svg" alt="inContact" class="container_image">
+            <img src="./assets/images/Icons/telegram.svg" alt="telegram" class="container_image">
         </div>
     </header>
     <header class="header_small">
@@ -70,9 +70,9 @@
             </div>
         </div>
         <div class="modal_images">
-            <img src="./assets/images/Icons/tickTok.png" alt="ticTok" class="images_image">
-            <img src="./assets/images/Icons/inContact.png" alt="inContact" class="images_image">
-            <img src="./assets/images/Icons/telegram.png" alt="telegram" class="images_image">
+            <img src="./assets/images/Icons/tickTok.svg" alt="ticTok" class="images_image">
+            <img src="./assets/images/Icons/inContact.svg" alt="inContact" class="images_image">
+            <img src="./assets/images/Icons/telegram.svg" alt="telegram" class="images_image">
         </div>
         <button class="modal_button button" onclick="openModalWindow()">Связаться с нами</button>
     </div>
@@ -314,9 +314,9 @@
             </div>
         </div>
         <div class="footer_contaner-bottom">
-            <img src="./assets/images/Icons/tickTokBig.png" alt="tickTock" class="contaner_image">
-            <img src="./assets/images/Icons/inContactBig.png" alt="inContact" class="contaner_image">
-            <img src="./assets/images/Icons/telegramBig.png" alt="telegram" class="contaner_image">
+            <img src="./assets/images/Icons/tickTokBig.svg" alt="tickTock" class="contaner_image">
+            <img src="./assets/images/Icons/inContactBig.svg" alt="inContact" class="contaner_image">
+            <img src="./assets/images/Icons/telegramBig.svg" alt="telegram" class="contaner_image">
         </div>
         <h3 class="footer_label-bottom label">Super Quiz</h3>
     </footer>
@@ -331,31 +331,7 @@
 
     <!-- slider with swagger -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 10,
-            grabCursor: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                1440: {
-                    slidesPerView: 4,
-                },
-                1300: {
-                    slidesPerView: 3,
-                },
-                762: {
-                    slidesPerView: 2,
-
-                },
-                100: {
-                    slidesPerView: 1,
-                },
-            },
-        });
-    </script>
+    <script src="./scripts/slider.js"></script>
 </body>
 
 </html>
