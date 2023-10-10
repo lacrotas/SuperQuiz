@@ -220,16 +220,14 @@
 @media(max-width:1440px) {
     .tests {
         .test_smile {
-            width: 100%;
-            margin: 0;
             margin-top: 8px;
         }
 
         .tests_container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
+            margin-top: 80px;
 
             .container_history {
                 width: 320px;
@@ -238,8 +236,7 @@
 
             .container_test {
                 width: 90%;
-                margin: 0 5%;
-                margin-top: 40px;
+                // margin: 0 5%;
 
                 .test_container {
                     .test_select {
@@ -267,7 +264,7 @@
             justify-content: center;
 
             .container_history {
-                width: 320px;
+                width: 100%;
                 float: none;
             }
 
