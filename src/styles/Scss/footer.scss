@@ -116,9 +116,9 @@
             margin-top: 48px;
 
             .contaner_image {
+                width: calc(100% / 3);
                 margin-left: 2px;
-                width: 95px;
-
+                min-height: 36px;
                 &:first-child {
                     margin-left: 0;
                 }

@@ -21,6 +21,7 @@ function setCheckBoxAnswer(index) {
     if (event.currentTarget.className == "container_item-test") {
         event.currentTarget.className = "active container_item-test";
         currentRoundArr[index] = 1;
+        QWISEQVESTION[currentRound].history.description = event.currentTarget.innerText;
     } else {
         event.currentTarget.className = "container_item-test";
         currentRoundArr[index] = 0;
@@ -29,6 +30,7 @@ function setCheckBoxAnswer(index) {
 function setRadioAnswer(index) {
     if (event.currentTarget.className == "container_item-radio") {
         currentRoundArr[0] = index;
+        QWISEQVESTION[currentRound].history.description = event.currentTarget.innerText;
     } else {
         currentRoundArr[0] = -1;
     }
