@@ -26,6 +26,7 @@ function setCheckBoxAnswer(index) {
         event.currentTarget.className = "container_item-test";
         currentRoundArr[index] = 0;
     }
+    loadCheckBoxRound();
 }
 function setRadioAnswer(index) {
     if (event.currentTarget.className == "container_item-radio") {
